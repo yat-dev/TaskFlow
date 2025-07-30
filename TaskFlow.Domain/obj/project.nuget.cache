@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "nGhudsy7KI8=",
+  "success": true,
+  "projectFilePath": "/Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Domain/TaskFlow.Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/yacine.atoini/.nuget/packages/swashbuckle.aspnetcore.swaggerui/9.0.3/swashbuckle.aspnetcore.swaggerui.9.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

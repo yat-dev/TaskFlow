@@ -1,0 +1,12 @@
+/Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Domain/bin/Debug/net9.0/TaskFlow.Domain.deps.json
+/Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Domain/bin/Debug/net9.0/TaskFlow.Domain.dll
+/Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Domain/bin/Debug/net9.0/TaskFlow.Domain.pdb
+/Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Domain/obj/Debug/net9.0/TaskFlow.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Domain/obj/Debug/net9.0/TaskFlow.Domain.AssemblyInfoInputs.cache
+/Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Domain/obj/Debug/net9.0/TaskFlow.Domain.AssemblyInfo.cs
+/Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Domain/obj/Debug/net9.0/TaskFlow.Domain.csproj.CoreCompileInputs.cache
+/Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Domain/obj/Debug/net9.0/TaskFlow.Domain.dll
+/Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Domain/obj/Debug/net9.0/refint/TaskFlow.Domain.dll
+/Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Domain/obj/Debug/net9.0/TaskFlow.Domain.pdb
+/Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Domain/obj/Debug/net9.0/ref/TaskFlow.Domain.dll
+/Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Domain/obj/Debug/net9.0/TaskFlow.Domain.csproj.AssemblyReference.cache
