@@ -2,12 +2,10 @@ using TaskFlow.Blazor.Models;
 
 namespace TaskFlow.Blazor.Services;
 
-public class ProjectService(HttpClient client)
+public class ProjectService(HttpClient httpClient)
 {
     public async Task<List<ProjectDto>> GetProjectsAsync()
     {
-        var result = await client.GetFromJsonAsync<List<ProjectDto>>($"api/projects");
-
-        return result ?? new List<ProjectDto>();
+        return await httpClient.GetFromJsonAsync<List<ProjectDto>>($"api/projects") ?? new List<ProjectDto>();
     }
 }

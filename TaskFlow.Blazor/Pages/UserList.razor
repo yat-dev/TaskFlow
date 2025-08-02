@@ -1,0 +1,36 @@
+@page "/users"
+
+@using TaskFlow.Blazor.Models
+@using TaskFlow.Blazor.Services
+@using MudBlazor
+
+@inject UserService UserService;
+
+<h3>UserList</h3>
+
+@if (users == null)
+{
+    <p>Loading...</p>
+}
+else if (!users.Any())
+{
+    <p>No users found.</p>
+}
+else
+{
+    <ul>
+        @foreach (var user in users)
+        {
+            <li>@user.Username - @user.Email</li>
+        }
+    </ul>
+}
+
+@code {
+    private List<UserDto>? users;
+
+    protected override async Task OnInitializedAsync()
+    {
+        users = await UserService.GetUsersAsync();
+    }
+}

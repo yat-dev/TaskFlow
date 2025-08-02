@@ -1,4 +1,7 @@
 is_global = true
+build_property.MudDebugAnalyzer = 
+build_property.MudAllowedAttributePattern = 
+build_property.MudAllowedAttributeList = 
 build_property.TargetFramework = net9.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
@@ -50,6 +53,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Blazor/Pages/ProjectList.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvamVjdExpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Blazor/Pages/TaskList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGFza0xpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Blazor/Pages/UserList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlckxpc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Blazor/Components/Layout/MainLayout.razor]

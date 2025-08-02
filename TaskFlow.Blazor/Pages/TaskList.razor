@@ -1,0 +1,33 @@
+@page "/tasks"
+@using TaskFlow.Blazor.Models
+@using TaskFlow.Blazor.Services
+@inject TaskService TaskService
+
+<h3>Tasks</h3>
+
+@if (tasks == null)
+{
+    <p>Loading...</p>
+}
+else if (tasks.Count == 0)
+{
+    <p>No tasks available.</p>
+}
+else
+{
+    <ul>
+        @foreach (var task in tasks)
+        {
+            <li>@task.Title</li>
+        }
+    </ul>
+}
+
+@code {
+    private List<TaskDto>? tasks;
+
+    protected override async Task OnInitializedAsync()
+    {
+        tasks = await TaskService.GetTasksAsync();
+    }
+}

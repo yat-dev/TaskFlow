@@ -16,6 +16,8 @@ Console.WriteLine("apiUrl: " + apiUrl);
 
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(apiUrl) });
 builder.Services.AddScoped<ProjectService>();
+builder.Services.AddScoped<TaskService>();
+builder.Services.AddScoped<UserService>();
 
 var app = builder.Build();
 

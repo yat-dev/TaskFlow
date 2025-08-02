@@ -120,6 +120,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "MudBlazor": {
+              "target": "Package",
+              "version": "[8.10.0, )"
+            },
             "Swashbuckle.AspNetCore.SwaggerUI": {
               "target": "Package",
               "version": "[9.0.3, )"
