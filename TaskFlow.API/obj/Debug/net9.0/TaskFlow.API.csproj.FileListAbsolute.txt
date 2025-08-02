@@ -136,3 +136,4 @@
 /Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.API/obj/Debug/net9.0/rjsmrazor.dswa.cache.json
 /Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.API/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json
 /Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.API/obj/Debug/net9.0/staticwebassets.build.json.cache
+/Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.API/obj/Debug/net9.0/TaskFlow.API.sourcelink.json

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TaskFlow.Blazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f07662cff33860df46dd8f87931f3b1757e3597b")]
 [assembly: System.Reflection.AssemblyProductAttribute("TaskFlow.Blazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TaskFlow.Blazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

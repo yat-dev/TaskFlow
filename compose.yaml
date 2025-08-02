@@ -1,12 +1,40 @@
 ﻿services:
-  taskflow.blazor:
-    image: taskflow.blazor
-    build:
-      context: .
-      dockerfile: TaskFlow.Blazor/Dockerfile
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: yacine.atoini
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: TaskFlow
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
 
   taskflow.api:
     image: taskflow.api
     build:
       context: .
       dockerfile: TaskFlow.API/Dockerfile
+    ports:
+      - "5165:80"
+    depends_on:
+      - db
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: Host=db;Port=5432;Database=TaskFlow;Username=yacine.atoini;Password=admin
+
+  taskflow.blazor:
+    image: taskflow.blazor
+    build:
+      context: .
+      dockerfile: TaskFlow.Blazor/Dockerfile
+    ports:
+      - "5265:80"
+    depends_on:
+      - taskflow.api
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+
+volumes:
+  pgdata:
+

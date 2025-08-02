@@ -10,3 +10,4 @@
 /Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Domain/obj/Debug/net9.0/TaskFlow.Domain.pdb
 /Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Domain/obj/Debug/net9.0/ref/TaskFlow.Domain.dll
 /Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Domain/obj/Debug/net9.0/TaskFlow.Domain.csproj.AssemblyReference.cache
+/Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Domain/obj/Debug/net9.0/TaskFlow.Domain.sourcelink.json

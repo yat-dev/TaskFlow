@@ -7,6 +7,12 @@ using TaskFlow.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Configuration
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+    .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true)
+    .AddEnvironmentVariables();
+
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
@@ -26,6 +32,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<TaskFlowDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.WebHost.ConfigureKestrel(options => options.ListenAnyIP(80));
+
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -36,5 +45,11 @@ if (app.Environment.IsDevelopment())
 
 app.MapControllers();
 app.UseHttpsRedirection();
+
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<TaskFlowDbContext>();
+    db.Database.Migrate();
+}
 
 app.Run();

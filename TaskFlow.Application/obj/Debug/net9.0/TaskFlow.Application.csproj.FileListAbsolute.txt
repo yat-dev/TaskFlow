@@ -15,3 +15,4 @@
 /Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Application/obj/Debug/net9.0/refint/TaskFlow.Application.dll
 /Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Application/obj/Debug/net9.0/TaskFlow.Application.pdb
 /Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Application/obj/Debug/net9.0/ref/TaskFlow.Application.dll
+/Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Application/obj/Debug/net9.0/TaskFlow.Application.sourcelink.json

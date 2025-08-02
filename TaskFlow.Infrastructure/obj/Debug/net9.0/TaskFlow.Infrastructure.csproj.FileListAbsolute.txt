@@ -15,3 +15,4 @@
 /Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Infrastructure/obj/Debug/net9.0/TaskFlow.Infrastructure.pdb
 /Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Infrastructure/obj/Debug/net9.0/TaskFlow.Infrastructure.genruntimeconfig.cache
 /Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Infrastructure/obj/Debug/net9.0/ref/TaskFlow.Infrastructure.dll
+/Users/yacine.atoini/RiderProjects/TaskFlow/TaskFlow.Infrastructure/obj/Debug/net9.0/TaskFlow.Infrastructure.sourcelink.json

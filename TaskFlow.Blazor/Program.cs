@@ -1,24 +1,31 @@
 using TaskFlow.Blazor.Components;
+using TaskFlow.Blazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// 🛠️ Configuration Kestrel doit être AVANT Build()
+builder.WebHost.ConfigureKestrel(options => options.ListenAnyIP(80));
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
+var apiUrl = "http://taskflow.api";
+
+Console.WriteLine("apiUrl: " + apiUrl);
+
+builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(apiUrl) });
+builder.Services.AddScoped<ProjectService>();
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error", createScopeForErrors: true);
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
 app.UseHttpsRedirection();
-
-
 app.UseAntiforgery();
 
 app.MapStaticAssets();
